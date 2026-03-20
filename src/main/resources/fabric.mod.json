@@ -1,36 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "aqua-translate",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "AquaClient Translator",
+  "description": "Translates signs and chat messages using Google Translate.",
   "authors": [
-    "seasnail"
+    "Aquific"
   ],
   "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "discord": "https://discord.gg/3JgZcuyZUp"
   },
   "icon": "assets/template/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "com.example.addon.AquaTranslate"
     ]
   },
-  "mixins": [
-    "addon-template.mixins.json"
-  ],
   "custom": {
-    "meteor-client:color": "225,25,25",
+    "meteor-client:color": "0,200,255",
     "modmenu": {
       "parent": {
-        "id": "meteor-client"
+        "id": "aquaclient"
       }
     }
   },
   "depends": {
     "java": ">=21",
     "minecraft": ["${mc_version}"],
-    "meteor-client": "*"
+    "aquaclient": "*"
   }
 }
